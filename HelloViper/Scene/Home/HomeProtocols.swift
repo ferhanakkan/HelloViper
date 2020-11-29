@@ -14,21 +14,26 @@ protocol HomeRouterProtocol: class { }
 
 protocol HomePresenterProtocol: class {
     var interactor: HomeInteractorInputProtocol! { get set }
+    func getContacts()
 }
 
 //MARK: Interactor
 
 // Interactor -> Presenter
-public protocol HomeInteractorOutputProtocol: class { }
+protocol HomeInteractorOutputProtocol: class {
+    func gotContacts(_ contacts: [TestDatas])
+}
 
 // Presenter -> Interactor
 
 protocol HomeInteractorInputProtocol: class {
     var presenter: HomeInteractorOutputProtocol! { get set }
+    func getContactsFromService()
 }
 
 //MARK: View
 
 protocol HomeViewProtocol: class {
     var presenter: HomePresenterProtocol! { get set }
+    func showContacts(_ contacts: [TestDatas])
 }

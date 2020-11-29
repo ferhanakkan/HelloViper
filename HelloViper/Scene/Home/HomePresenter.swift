@@ -13,7 +13,15 @@ class HomePresenter {
     var router: HomeRouterProtocol!
 }
 
-extension HomePresenter: HomePresenterProtocol {}
+extension HomePresenter: HomePresenterProtocol {
+    func getContacts() {
+        interactor.getContactsFromService()
+    }
+}
 
-extension HomePresenter: HomeInteractorOutputProtocol {}
+extension HomePresenter: HomeInteractorOutputProtocol {
+    func gotContacts(_ contacts: [TestDatas]) {
+        view.showContacts(contacts)
+    }
+}
 

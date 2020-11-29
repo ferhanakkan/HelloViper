@@ -16,6 +16,7 @@
 		3641257B2573AE7F00336834 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3641257A2573AE7F00336834 /* HomeProtocols.swift */; };
 		3641257E2573AE8900336834 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3641257D2573AE8900336834 /* HomeRouter.swift */; };
 		3641258A2573B21700336834 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364125892573B21700336834 /* HomeViewController.swift */; };
+		36C7374F2573D8CC0003526C /* TestDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C7374E2573D8CC0003526C /* TestDatas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3641257A2573AE7F00336834 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		3641257D2573AE8900336834 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		364125892573B21700336834 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		36C7374E2573D8CC0003526C /* TestDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDatas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,8 @@
 		364125582573AAB300336834 /* HelloViper */ = {
 			isa = PBXGroup;
 			children = (
-				364125712573AE3300336834 /* Supporting Files */,
+				36C7374D2573D8C10003526C /* Models */,
+				364125712573AE3300336834 /* SupportingFiles */,
 				3641256F2573AE2900336834 /* Scene */,
 			);
 			path = HelloViper;
@@ -88,7 +91,7 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		364125712573AE3300336834 /* Supporting Files */ = {
+		364125712573AE3300336834 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				364125722573AE4000336834 /* Assets */,
@@ -97,7 +100,7 @@
 				3641255B2573AAB300336834 /* SceneDelegate.swift */,
 				364125642573AAB400336834 /* LaunchScreen.storyboard */,
 			);
-			path = "Supporting Files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		364125722573AE4000336834 /* Assets */ = {
@@ -114,6 +117,14 @@
 				364125672573AAB400336834 /* Info.plist */,
 			);
 			path = Plist;
+			sourceTree = "<group>";
+		};
+		36C7374D2573D8C10003526C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36C7374E2573D8CC0003526C /* TestDatas.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 				3641255C2573AAB300336834 /* SceneDelegate.swift in Sources */,
 				3641258A2573B21700336834 /* HomeViewController.swift in Sources */,
 				364125782573AE7400336834 /* HomePresenter.swift in Sources */,
+				36C7374F2573D8CC0003526C /* TestDatas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43THU6L26P;
-				INFOPLIST_FILE = HelloViper/Info.plist;
+				INFOPLIST_FILE = HelloViper/SupportingFiles/Plist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43THU6L26P;
-				INFOPLIST_FILE = HelloViper/Info.plist;
+				INFOPLIST_FILE = HelloViper/SupportingFiles/Plist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

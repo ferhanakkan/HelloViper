@@ -20,7 +20,6 @@ class HomeRouter {
         
         interactor.presenter = presenter
         presenter.interactor = interactor
-        
         presenter.router = self
         presenter.view = controller
         controller.presenter = presenter
