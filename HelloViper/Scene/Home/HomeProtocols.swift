@@ -8,13 +8,16 @@
 import Foundation
 
 //MARK: Router
-protocol HomeRouterProtocol: class { }
+protocol HomeRouterProtocol: class {
+    func showDetailPage(contact: TestDatas)
+}
 
 //MARK: Presenter
 
 protocol HomePresenterProtocol: class {
     var interactor: HomeInteractorInputProtocol! { get set }
     func getContacts()
+    func showDetailPage(contact: TestDatas)
 }
 
 //MARK: Interactor

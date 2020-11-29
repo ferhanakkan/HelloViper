@@ -14,6 +14,11 @@ class HomePresenter {
 }
 
 extension HomePresenter: HomePresenterProtocol {
+    
+    func showDetailPage(contact: TestDatas) {
+        router.showDetailPage(contact: contact)
+    }
+    
     func getContacts() {
         interactor.getContactsFromService()
     }

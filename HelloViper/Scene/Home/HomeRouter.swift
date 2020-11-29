@@ -26,4 +26,9 @@ class HomeRouter {
     }
 }
 
-extension HomeRouter: HomeRouterProtocol {}
+extension HomeRouter: HomeRouterProtocol {
+    func showDetailPage(contact: TestDatas) {
+        let vc = HomeDetailRouter(contactData: contact).controller
+        controller.navigationController?.show(vc!, sender: nil)
+    }
+}

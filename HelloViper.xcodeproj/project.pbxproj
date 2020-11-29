@@ -17,6 +17,11 @@
 		3641257E2573AE8900336834 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3641257D2573AE8900336834 /* HomeRouter.swift */; };
 		3641258A2573B21700336834 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364125892573B21700336834 /* HomeViewController.swift */; };
 		36C7374F2573D8CC0003526C /* TestDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C7374E2573D8CC0003526C /* TestDatas.swift */; };
+		36C737532573E7990003526C /* HomeDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C737522573E7990003526C /* HomeDetailProtocols.swift */; };
+		36C737572573E7A50003526C /* HomeDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C737562573E7A50003526C /* HomeDetailRouter.swift */; };
+		36C7375A2573E7BC0003526C /* HomeDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C737592573E7BC0003526C /* HomeDetailInteractor.swift */; };
+		36C7375D2573E7C90003526C /* HomeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C7375C2573E7C90003526C /* HomeDetailPresenter.swift */; };
+		36C737602573E7D80003526C /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C7375F2573E7D80003526C /* HomeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		3641257D2573AE8900336834 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		364125892573B21700336834 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		36C7374E2573D8CC0003526C /* TestDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDatas.swift; sourceTree = "<group>"; };
+		36C737522573E7990003526C /* HomeDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailProtocols.swift; sourceTree = "<group>"; };
+		36C737562573E7A50003526C /* HomeDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailRouter.swift; sourceTree = "<group>"; };
+		36C737592573E7BC0003526C /* HomeDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailInteractor.swift; sourceTree = "<group>"; };
+		36C7375C2573E7C90003526C /* HomeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailPresenter.swift; sourceTree = "<group>"; };
+		36C7375F2573E7D80003526C /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,7 @@
 		364125702573AE2E00336834 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				36C737512573E7740003526C /* Home Detail */,
 				3641257A2573AE7F00336834 /* HomeProtocols.swift */,
 				3641257D2573AE8900336834 /* HomeRouter.swift */,
 				364125742573AE6B00336834 /* HomeInteractor.swift */,
@@ -125,6 +136,18 @@
 				36C7374E2573D8CC0003526C /* TestDatas.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		36C737512573E7740003526C /* Home Detail */ = {
+			isa = PBXGroup;
+			children = (
+				36C737522573E7990003526C /* HomeDetailProtocols.swift */,
+				36C737562573E7A50003526C /* HomeDetailRouter.swift */,
+				36C737592573E7BC0003526C /* HomeDetailInteractor.swift */,
+				36C7375C2573E7C90003526C /* HomeDetailPresenter.swift */,
+				36C7375F2573E7D80003526C /* HomeDetailViewController.swift */,
+			);
+			path = "Home Detail";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,10 +223,15 @@
 				3641257E2573AE8900336834 /* HomeRouter.swift in Sources */,
 				3641257B2573AE7F00336834 /* HomeProtocols.swift in Sources */,
 				3641255A2573AAB300336834 /* AppDelegate.swift in Sources */,
+				36C7375D2573E7C90003526C /* HomeDetailPresenter.swift in Sources */,
+				36C737572573E7A50003526C /* HomeDetailRouter.swift in Sources */,
+				36C7375A2573E7BC0003526C /* HomeDetailInteractor.swift in Sources */,
 				3641255C2573AAB300336834 /* SceneDelegate.swift in Sources */,
 				3641258A2573B21700336834 /* HomeViewController.swift in Sources */,
 				364125782573AE7400336834 /* HomePresenter.swift in Sources */,
+				36C737532573E7990003526C /* HomeDetailProtocols.swift in Sources */,
 				36C7374F2573D8CC0003526C /* TestDatas.swift in Sources */,
+				36C737602573E7D80003526C /* HomeDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
